@@ -1,2 +1,2 @@
-# BM-UNI-CLONE
-UNI-CLONE
+# Welcome to the course!
+
