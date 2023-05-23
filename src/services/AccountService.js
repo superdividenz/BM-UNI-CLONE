@@ -1,4 +1,4 @@
-import { ethers } from "ethers"
+import {ethers} from "ethers"
 
 const getProvider = () => new ethers.providers.Web3Provider(window.ethereum)
 
@@ -31,3 +31,4 @@ export default {
         return { provider, signer, walletAddress }
     }
 }
+

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useState} from "react";
 
 const useAmount = () => {
     const [inputAmount, _setInputAmount] = useState('')
@@ -7,8 +7,8 @@ const useAmount = () => {
     const setInputAmount = (e) => {
         let amount = e.target.value
 
-        if (amount === '.') { amount = '0.' }
-        if ((!isNaN(parseFloat(amount)) && isFinite(amount)) || [0, '', null].includes(amount)) {
+        if(amount === '.') { amount = '0.'}
+        if ( (!isNaN(parseFloat(amount)) && isFinite(amount)) || [0, '', null].includes(amount) ){
             _setInputAmount(amount)
         }
     }

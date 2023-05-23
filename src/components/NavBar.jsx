@@ -1,5 +1,6 @@
 import { useLocation, Link } from 'react-router-dom'
 import {AppLogo, NetworkLogo, NetworkName} from "../styles/NavBarStyles";
+import ConnectButton from "./ConnectButton";
 
 const NavBar = () => {
     const pathName = useLocation().pathname;
@@ -47,6 +48,7 @@ const NavBar = () => {
                 <div>
                     <ul className="nav navbar-nav rightNav">
                         <li className="nav-item">
+                            <ConnectButton />
                         </li>
                     </ul>
                 </div>
