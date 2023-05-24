@@ -8,8 +8,9 @@ const ConnectButton = () => {
     const iconRef = useRef()
 
     useEffect(() => {
-        tryConnectingMetaMask()
-    }, [])
+        tryConnectingMetaMask();
+      }, [tryConnectingMetaMask]);
+      
 
     const setMetaMaskIcon = async () => {
         if(!walletAddress) return
@@ -26,8 +27,9 @@ const ConnectButton = () => {
     }
 
     useEffect(() => {
-        setMetaMaskIcon()
-    }, [walletAddress])
+        setMetaMaskIcon();
+      });
+      
 
     return (
         <>

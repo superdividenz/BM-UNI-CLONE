@@ -12,7 +12,7 @@ const AppLogo = styled.img`
 `
 
 const NetworkLogo = styled.img`
-  background-color: #fff;
+  background-color: #ooo;
   border-radius: 100px;
   border: 1px solid #a0969c;
   margin-top: 10px;
