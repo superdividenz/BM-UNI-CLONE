@@ -1,4 +1,4 @@
-import {ethers} from "ethers";
+import { ethers } from "ethers";
 import {
     contracts, ERC20ABI,
     PoolArtifact,
@@ -11,7 +11,7 @@ import {
 import AccountService from "./AccountService";
 
 export const getSwapRouter = () => {
-    return  new ethers.Contract(
+    return new ethers.Contract(
         contracts.SWAPROUTER.address,
         SwapRouterArtifact.abi,
         AccountService.getProvider(),
@@ -25,9 +25,9 @@ export const getQuoter = () => {
         AccountService.getProvider(),
     )
 }
-
+// Quoter2
 export const getQuoter2 = () => {
-    return  new ethers.Contract(
+    return new ethers.Contract(
         contracts.QUOTER2.address,
         Quoter2Artifact.abi,
         AccountService.getProvider(),
